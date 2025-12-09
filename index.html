@@ -1,267 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshit Sharapu</title>
+    <title>Sharapu Akshit - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon_io/android-chrome-192x192.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="android-chrome-192x192.png">
 </head>
-
 <body>
-    <section id="home">
-        <div class="menu-bar">
-            <img src="favicon_io/android-chrome-192x192.png" alt="logo" class="logo" width="40px" height="40px">
-            <ul class="list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2 class="logo">SA</h2>
+            <button class="close-btn" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#home" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a></li>
+                <li><a href="#about" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a></li>
+                <li><a href="#skills" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Skills</span>
+                </a></li>
+                <li><a href="#projects" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Projects</span>
+                </a></li>
+                <li><a href="#experience" class="nav-link">
+                    <i class="fas fa-certificate"></i>
+                    <span>Experience</span>
+                </a></li>
+                <li><a href="#contact" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a></li>
             </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
         </div>
-        <div class="pp">
-            <img src="IMG_20241113_201121_546.jpg" alt="" class="ppin">
-        </div>
-        <div class="about-section">
-            <h2 class="about-title">About</h2>
-            <p class="about-text">
-                I am a passionate Full Stack Developer with a strong focus on building clean,
-                responsive, and user-friendly web applications. I enjoy working across both
-                front-end and back-end technologies, turning ideas into real, functional digital
-                experiences.
-                <br><br>
-                I specialize in JavaScript, React, Node.js, Express, MongoDB, and modern UI/UX
-                principles. I love solving problems, learning new tools, and writing code that
-                looks good and performs even better.
-            </p>
-        </div>
-    </section>
+    </aside>
 
-    <section id="skills" class="skills-section">
-        <h2 class="skills-title">Skills</h2>
-    
-        <div class="skills-wrapper">
-    
-            <!-- LEFT: 3x3 Grid -->
-            <div class="skills-grid">
-    
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-                    <p>HTML</p>
-                </div>
-    
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
-                    <p>CSS</p>
-                </div>
-    
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-                    <p>JavaScript</p>
-                </div>
-    
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
-                    <p>React</p>
-                </div>
-    
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
-                    <p>Node.js</p>
-                </div>
-    
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg">
-                    <p>Express.js</p>
-                </div>
-    
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
-                    <p>MongoDB</p>
-                </div>
-    
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
-                    <p>Git</p>
-                </div>
-    
-                <div class="skill-card">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
-                    <p>GitHub</p>
-                </div>
-            </div>
-    
-            <!-- RIGHT: Big Docker Card -->
-            <div class="docker-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
-                <h3>Docker</h3>
-                <p>Containerization & DevOps</p>
-            </div>
-    
-        </div>
-    </section>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+    </button>
 
-    <section id="projects" class="projects-section">
-        <h2 class="projects-title">Projects</h2>
-    
-        <div class="projects-grid">
-    
-            <!-- Project 1 -->
-            <div class="project-card">
-                <img src="https://picsum.photos/500/300" alt="">
-                <h3>Social Media App</h3>
-                <p>A full-stack social platform built using React, Node.js, Express, and MongoDB.</p>
-                <a href="#" class="project-btn">View Project</a>
-            </div>
-    
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="https://picsum.photos/500/301" alt="">
-                <h3>E-commerce Website</h3>
-                <p>A modern online store with cart, authentication, and admin panel.</p>
-                <a href="#" class="project-btn">View Project</a>
-            </div>
-    
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="https://picsum.photos/500/302" alt="">
-                <h3>Portfolio Website</h3>
-                <p>A responsive personal portfolio built using HTML, CSS, JS and animations.</p>
-                <a href="#" class="project-btn">View Project</a>
-            </div>
-    
-            <!-- Project 4 -->
-            <div class="project-card">
-                <img src="https://picsum.photos/500/303" alt="">
-                <h3>Weather App</h3>
-                <p>Real-time weather forecast app made with JavaScript and API integration.</p>
-                <a href="#" class="project-btn">View Project</a>
-            </div>
-    
-            <!-- Project 5 -->
-            <div class="project-card">
-                <img src="https://picsum.photos/500/304" alt="">
-                <h3>Chat Application</h3>
-                <p>Realtime chat system made using Socket.io, Node.js, and Express.</p>
-                <a href="#" class="project-btn">View Project</a>
-            </div>
-    
-            <!-- Project 6 -->
-            <div class="project-card">
-                <img src="https://picsum.photos/500/305" alt="">
-                <h3>Task Manager</h3>
-                <p>Productivity app for managing tasks, deadlines, and reminders.</p>
-                <a href="#" class="project-btn">View Project</a>
-            </div>
-    
-        </div>
-    </section>
-    
-    <section id="contact" class="contact-section">
-        <h2 class="contact-title">Contact</h2>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-    
-        <div class="contact-container">
-
-    
-            <!-- LEFT SIDE: Contact Information -->
-            <div class="contact-info">
-                <h3>Get in Touch</h3>
-    
-                <p><strong>Email:</strong>  akshitsharapu@gmail.com</p>
-                <p><strong>Phone:</strong>  +91 9704124836</p>
-                <p><strong>Location:</strong> Hyderabad, India</p>
-    
-                <p class="contact-text">
-                    I'm always open to discussing new projects, opportunities, or collaborations.  
-                    Feel free to reach out anytime!
-                </p>
-            </div>
-    
-            <!-- RIGHT SIDE: Social Media -->
-            <div class="contact-socials">
-                <h3>Connect With Me</h3>
-    
-                <div class="social-links">
-    
-                    <a href="https://github.com/AkshitSharapu" class="social-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
-                        <span>GitHub</span>
-                    </a>
-    
-                    <a href="https://www.linkedin.com/in/akshit-sharapu-655267294/" class="social-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
-                        <span>LinkedIn</span>
-                    </a>
-    
-                    <a href="https://www.instagram.com/akshitsharapu/" class="social-card">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
-                        <span>Instagram</span>
-                    </a>
-    
-                    <a href="https://x.com/AkshitShar4767" class="social-card">
-                        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png">
-                        <span>Twitter</span>
-                    </a>
-    
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="hero-title">Sharapu Akshit</h1>
+                    <p class="hero-subtitle">Creative Developer & Designer</p>
+                    <p class="hero-description">
+                        Passionate about creating beautiful, functional, and user-centric digital experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-circle">
+                        <div class="profile-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-    
-        </div>
-    </section>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-arrow-down"></i>
+            </div>
+        </section>
 
-    <footer class="footer">
-        <div class="footer-container">
-    
-            <!-- LEFT SIDE: NAME / LOGO -->
-            <div class="footer-section">
-                <h2 class="footer-logo">Akshit.</h2>
-                <p class="footer-desc">Full Stack Developer • Building clean, modern, and optimized web apps.</p>
-            </div>
-    
-            <!-- MIDDLE: QUICK LINKS -->
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-    
-            <!-- RIGHT SIDE: SOCIALS -->
-            <div class="footer-section">
-                <h3>Connect</h3>
-    
-                <div class="footer-socials">
-                    <a href="https://github.com/AkshitSharapu"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"></a>
-                    <a href="https://www.linkedin.com/in/akshit-sharapu-655267294/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"></a>
-                    <a href="https://www.instagram.com/akshitsharapu/"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png"></a>
-                    <a href="https://x.com/AkshitShar4767"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"></a>
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="lead">
+                            I'm a passionate developer and designer with a keen eye for detail and a love for creating seamless digital experiences.
+                        </p>
+                        <p>
+                            With expertise in modern web technologies and design principles, I transform ideas into reality. 
+                            My approach combines technical proficiency with creative thinking to deliver solutions that not only work flawlessly but also delight users.
+                        </p>
+                        <p>
+                            When I'm not coding or designing, you can find me exploring new technologies, contributing to open-source projects, 
+                            or sharing knowledge with the developer community.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <h3 class="stat-number">50+</h3>
+                                <p class="stat-label">Projects Completed</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number">5+</h3>
+                                <p class="stat-label">Years Experience</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number">30+</h3>
+                                <p class="stat-label">Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-    
-        </div>
-    
-        <div class="footer-bottom">
-            <p>© 2025 Akshit Sharapu. All Rights Reserved.</p>
-        </div>
-    </footer>
-    
-    
-    
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <ul class="skill-list">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React & Vue.js</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <ul class="skill-list">
+                            <li>Node.js & Express</li>
+                            <li>Python & Django</li>
+                            <li>RESTful APIs</li>
+                            <li>Database Design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Design</h3>
+                        <ul class="skill-list">
+                            <li>UI/UX Design</li>
+                            <li>Figma & Adobe XD</li>
+                            <li>Prototyping</li>
+                            <li>Brand Identity</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Other</h3>
+                        <ul class="skill-list">
+                            <li>Git & GitHub</li>
+                            <li>Docker</li>
+                            <li>CI/CD</li>
+                            <li>Agile/Scrum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <p class="project-description">
+                                A full-featured e-commerce platform with shopping cart, payment integration, and admin dashboard.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">
+                                A collaborative task management application with real-time updates and team features.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">PWA</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Analytics Dashboard</h3>
+                            <p class="project-description">
+                                Interactive data visualization dashboard with real-time metrics and custom reports.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">D3.js</span>
+                                <span class="tag">Python</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-blog"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Personal Blog Platform</h3>
+                            <p class="project-description">
+                                A modern blogging platform with markdown support, SEO optimization, and comment system.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">Tailwind</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021 - Present</div>
+                            <h3 class="timeline-title">Senior Full Stack Developer</h3>
+                            <p class="timeline-company">Tech Innovations Inc.</p>
+                            <p class="timeline-description">
+                                Leading development of scalable web applications, mentoring junior developers, 
+                                and implementing best practices for code quality and performance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2019 - 2021</div>
+                            <h3 class="timeline-title">Full Stack Developer</h3>
+                            <p class="timeline-company">Digital Solutions Ltd.</p>
+                            <p class="timeline-description">
+                                Developed and maintained multiple client projects, collaborated with design teams, 
+                                and improved application performance by 40%.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2017 - 2019</div>
+                            <h3 class="timeline-title">Junior Developer</h3>
+                            <p class="timeline-company">StartUp Hub</p>
+                            <p class="timeline-description">
+                                Contributed to various projects, learned modern development practices, 
+                                and built a strong foundation in web technologies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p class="contact-intro">
+                            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:sharapu.akshit@email.com">sharapu.akshit@email.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Your City, Country</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Sharapu Akshit. All rights reserved.</p>
+                <p class="footer-tagline">Crafted with <i class="fas fa-heart"></i> and code</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="main.js"></script>
 </body>
-
-
 </html>
